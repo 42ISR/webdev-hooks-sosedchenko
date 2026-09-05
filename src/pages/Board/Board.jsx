@@ -1,6 +1,6 @@
 const PageBoard = () => {
     return (
-        <section className="page active" id="page-board">
+        <section className="page" id="page-board">
             <div className="page-header">
                 <h1 className="page-title">Board</h1>
                 <p className="page-subtitle">Sprint 24, growth pod</p>

@@ -67,9 +67,6 @@ button {
 }
 
 .page {
-    display: none;
-}
-.page.active {
     display: block;
     max-width: 980px;
 }
