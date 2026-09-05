@@ -8,11 +8,13 @@ import { useState } from 'react'
 
 function App() {
     const [page, setPage] = useState('board');
+    const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
+
     return (
-        <div className="app-shell" id="appShell">
-            <Sidebar setPage={setPage} page={page}/>
+        <div className= { `app-shell ${sidebarCollapsed ? 'sidebar-collapsed' : ''}` } id="appShell">
+            <Sidebar setPage={setPage} page={page} sidebarCollapsed={sidebarCollapsed} />
             <div className="app-main">
-                <Header />
+                <Header setSidebarCollapsed={setSidebarCollapsed} />
 
                 <main className="page-area">
                     { page === "board" && <PageBoard /> }
@@ -26,3 +28,5 @@ function App() {
 }
 
 export default App
+
+//app-shell sidebar-collapsed

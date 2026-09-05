@@ -1,9 +1,11 @@
 import "./Header.css"
+import Input from '../Input/Input.jsx'
 
-const Header = () => {
+const Header = ({setSidebarCollapsed}) => {
     return (
         <header className="topbar">
             <button
+                onClick={() => setSidebarCollapsed(val => !val)}
                 className="icon-btn"
                 id="sidebarToggle"
                 title="Collapse sidebar"
@@ -25,8 +27,7 @@ const Header = () => {
                 data-hook="3.3 useState + useEffect + fetch (debounce)"
             >
                 <div className="mount-point" id="mount-search">
-                    <input
-                        className="input"
+                    <Input
                         style={{ width: "100%" }}
                         placeholder="Search tasks, people..."
                     />

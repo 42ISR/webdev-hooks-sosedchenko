@@ -1,3 +1,5 @@
+import Input from '../../components/Input/Input.jsx'
+
 const PageBoard = () => {
     return (
         <section className="page" id="page-board">
@@ -45,8 +47,8 @@ const PageBoard = () => {
                 data-hook="1.6 array · 1.1 counter · 1.5 functional update">
                 <div className="mount-point" id="mount-tasklist">
                     <div className="add-task-row">
-                        <input
-                            className="input grow"
+                        <Input
+                            className="grow"
                             placeholder="Add a task and press Enter..."
                         />
                         <button className="btn">Add</button>
