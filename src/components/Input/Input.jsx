@@ -1,6 +1,6 @@
-const Input = (props) => {
+const Input = ({ className, ...props }) => {
     return (
-        <input className="input" {...props} />
+        <input className={`input ${className ?? ''}`} {...props} />
     )
 };
 
